@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style/custom.css">
+    <title>Jardim Encantado</title>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1><img src="./imagens/logo2.png" alt="logo"></h1>
+                </div>
+                <div class="col">
+                    <ul class="nav justify-content-end">
+                        <li class="nav-item"><a class="nav-link active" href="">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#produtos">Produtos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contatos">Contato</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <section id="sobre">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7 col-sm-12">
+                    <h2>Sobre nós</h2>
+                    <p>Bem-vindo ao Jardim Encantado!<br>
+                        Somos mais do que uma simples loja de plantas - somos apaixonados por criar e compartilhar pequenos mundos verdes. Especializados em terrários, cada um é uma obra de arte viva, combinando plantas cuidadosamente selecionadas e elementos naturais para criar ecossistemas autosustentáveis e encantadores!
+                        Nossa equipe está aqui para ajudar a escolher o terrário perfeito para sua casa ou alguém especial. Descubra a magia dos terrários conosco e traga um pedacinho da natureza para o seu ambiente!</p>
+                    <a class="btn btn-lg btn-success">Comprar</a>
+                </div>
+                <div class="col-md-5 col-sm-12">
+                    <img src="./imagens/sobrenos.jpg" alt="Imagem Exemplo" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="produtos">
+
+        <div class="container">
+            <div class="row">
+                <div class="col">
+
+                    <h2>Nossos Terrários</h2>
+
+                    <div class="card">
+                        <img src="./imagens/img1.jpg" alt="Imagem Exemplo" class="img-fluid">
+                        <div class="card-body">
+                            <h5 class="card-title">Terrário Maia</h5>
+                            <p class="card-text">Terrário clássico, o presente ideal para qualquer ocasião!</p>
+                            <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-1" >ver detalhes</a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="./imagens/img2.jpg" alt="Imagem Exemplo" class="img-fluid">
+                        <div class="card-body">
+                            <h5 class="card-title">Terrário Luna</h5>
+                            <p class="card-text">Terrário arco-íris, perfeito para ambientes mágicos!</p>
+                            <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-2">ver detalhes</a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="./imagens/img3.jpg" alt="Imagem Exemplo" class="img-fluid">
+                        <div class="card-body">
+                            <h5 class="card-title">Personalizado</h5>
+                            <p class="card-text">Crie seu próprio terrário com opções incríveis de plantas, cristais e miniaturas decorativas.</p>
+                            <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-3">ver detalhes</a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section id="contato">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <h2>Contato</h2>
+                    <p>Ficou interessado ou tem alguma dúvida? Preencha o formulário e em breve entraremos em contato com você!</p>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <form class="form">
+
+                        <div class="input-group">
+                            <input class="form-control" type="text" name="nome" placeholder="digite seu nome">
+                        </div>
+
+                        <div class="input-group">
+                            <input class="form-control" type="text" name="email" placeholder="digite seu email">
+                        </div>
+
+                        <div class="input-group">
+                            <textarea  class="form-control" name="" rows="5"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-lg btn-success">Pronto!</button>
+
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <div class="modal fade" id="modal-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Terrário Maia</h5>
+                    <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h6>Mini:10cm - Pequeno:25cm - Médio:35cm</h6>
+                    <table class="table table-hover table-striped">
+                        <thead>
+                            <tr>
+                                <th>Tamanhos</th>
+                                <th>Preços</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Mini</td>
+                                <td>R$ 800</td>
+                            </tr>
+                            <tr>
+                                <td>Pequeno</td>
+                                <td>R$ 1.500</td>
+                            </tr>
+                            <tr>
+                                <td>Médio</td>
+                                <td>R$ 2.500</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="modal fade" id="modal-2">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Terrário Luna</h5>
+                    <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h6>Mini:10cm - Pequeno:25cm - Médio:35cm</h6>
+                    <table class="table table-hover table-striped">
+                        <thead>
+                            <tr>
+                                <th>Tamanhos</th>
+                                <th>Preços</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Mini</td>
+                                <td>R$ 800</td>
+                            </tr>
+                            <tr>
+                                <td>Pequeno</td>
+                                <td>R$ 1.500</td>
+                            </tr>
+                            <tr>
+                                <td>Médio</td>
+                                <td>R$ 2.500</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="modal fade" id="modal-3">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Personalizado</h5>
+                    <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h6>Mini:10cm - Pequeno:25cm - Médio:35cm</h6>
+                    <table class="table table-hover table-striped">
+                        <thead>
+                            <tr>
+                                <th>Tamanhos</th>
+                                <th>Preços</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Mini</td>
+                                <td>R$ 800</td>
+                            </tr>
+                            <tr>
+                                <td>Pequeno</td>
+                                <td>R$ 1.500</td>
+                            </tr>
+                            <tr>
+                                <td>Médio</td>
+                                <td>R$ 2.500</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
